@@ -46,7 +46,7 @@ if __name__ == "__main__":
     parser.add_argument('--numwait', type=int, default=2, help='number of messages at start ("Place Circuit NOW!") (default: 2)')
     parser.add_argument('--speed', type=int, default=2000, help='speed of the bed (default: 2000)')
     parser.add_argument('--zposition', type=int, default=200, help='Z position to free space for the glass container (default: 200)')
-    parser.add_argument('--frontposition', type=int, default=125, help='Y position of bed in front mode (default: 125)')
+    parser.add_argument('--frontposition', type=int, default=125, help='X position of bed in front mode (default: 125)')
     parser.add_argument('--backposition', type=int, default=150, help='Y position of bed in back mode (default: 150)')
 
     args = parser.parse_args()

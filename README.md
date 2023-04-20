@@ -52,7 +52,7 @@ options:
   --zposition ZPOSITION
                         Z position to free space for the glass container (default: 200)
   --frontposition FRONTPOSITION
-                        Y position of bed in front mode (default: 125)
+                        X position of bed in front mode (default: 125)
   --backposition BACKPOSITION
                         Y position of bed in back mode (default: 150)
 ```
