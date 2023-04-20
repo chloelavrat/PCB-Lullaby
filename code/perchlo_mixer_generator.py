@@ -41,13 +41,13 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Perchlo mixer gcode')
     parser.add_argument('filename', metavar='FILE', type=str, help='name of the gcode file')
-    parser.add_argument('--bedtemp', type=int, default=30, help='bed temperature (30 for perchlo + copper, 0 for perchlo + aluminium)')
-    parser.add_argument('--timemix', type=int, default=1, help='duration of the mix, in minutes')
-    parser.add_argument('--numwait', type=int, default=2, help='number of messages at start ("Place Circuit NOW!")')
-    parser.add_argument('--speed', type=int, default=2000, help='speed of the bed')
-    parser.add_argument('--zposition', type=int, default=200, help='Z position to free space for the glass container')
-    parser.add_argument('--frontposition', type=int, default=125, help='Y position of bed in front mode')
-    parser.add_argument('--backposition', type=int, default=150, help='Y position of bed in back mode')
+    parser.add_argument('--bedtemp', type=int, default=30, help='bed temperature (default: 30)')
+    parser.add_argument('--timemix', type=int, default=1, help='duration of the mix, in minutes (default: 1)')
+    parser.add_argument('--numwait', type=int, default=2, help='number of messages at start ("Place Circuit NOW!") (default: 2)')
+    parser.add_argument('--speed', type=int, default=2000, help='speed of the bed (default: 2000)')
+    parser.add_argument('--zposition', type=int, default=200, help='Z position to free space for the glass container (default: 200)')
+    parser.add_argument('--frontposition', type=int, default=125, help='Y position of bed in front mode (default: 125)')
+    parser.add_argument('--backposition', type=int, default=150, help='Y position of bed in back mode (default: 150)')
 
     args = parser.parse_args()
 

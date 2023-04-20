@@ -45,16 +45,16 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  --bedtemp BEDTEMP     bed temperature (30 for perchlo + copper, 0 for perchlo + aluminium)
-  --timemix TIMEMIX     duration of the mix, in minutes
-  --numwait NUMWAIT     number of messages at start ("Place Circuit NOW!")
-  --speed SPEED         speed of the bed
+  --bedtemp BEDTEMP     bed temperature (default: 30)
+  --timemix TIMEMIX     duration of the mix, in minutes (default: 1)
+  --numwait NUMWAIT     number of messages at start ("Place Circuit NOW!") (default: 2)
+  --speed SPEED         speed of the bed (default: 2000)
   --zposition ZPOSITION
-                        Z position to free space for the glass container
+                        Z position to free space for the glass container (default: 200)
   --frontposition FRONTPOSITION
-                        Y position of bed in front mode
+                        Y position of bed in front mode (default: 125)
   --backposition BACKPOSITION
-                        Y position of bed in back mode
+                        Y position of bed in back mode (default: 150)
 ```
 
 Here's an example of how to use this script:
