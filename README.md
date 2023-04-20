@@ -31,14 +31,31 @@ python ./code/perchlo_mixer_gcode.py FILE [--bedtemp BEDTEMP] [--timemix TIMEMIX
 
 Note that the default value are for an Ender-3 Pro 3D-printer: 
 
-- Replace `FILE` with the name of your G-code file.
-- `--bedtemp` is an optional argument that sets the bed temperature to 30°C for perchlo and copper, or 0°C for perchlo and aluminium. Default value is 30.
-- `--timemix` is an optional argument that sets the duration of the mix, in minutes. Default value is 1.
-- `--numwait` is an optional argument that sets the number of messages at the start ("Place Circuit NOW!"). Default value is 2.
-- `--speed` is an optional argument that sets the speed of the bed. Default value is 2000.
-- `--zposition` is an optional argument that sets the Z position to free space for the glass container. Default value is 200.
-- `--frontposition` is an optional argument that sets the Y position of the bed in front mode. Default value is 125.
-- `--backposition` is an optional argument that sets the Y position of the bed in back mode. Default value is 150.
+```
+$ python ./code/perchlo_mixer_generator.py -h
+usage: perchlo_mixer_generator.py [-h] [--bedtemp BEDTEMP] [--timemix TIMEMIX] [--numwait NUMWAIT]
+                                  [--speed SPEED] [--zposition ZPOSITION]
+                                  [--frontposition FRONTPOSITION] [--backposition BACKPOSITION]
+                                  FILE
+
+Perchlo mixer gcode
+
+positional arguments:
+  FILE                  name of the gcode file
+
+options:
+  -h, --help            show this help message and exit
+  --bedtemp BEDTEMP     bed temperature (30 for perchlo + copper, 0 for perchlo + aluminium)
+  --timemix TIMEMIX     duration of the mix, in minutes
+  --numwait NUMWAIT     number of messages at start ("Place Circuit NOW!")
+  --speed SPEED         speed of the bed
+  --zposition ZPOSITION
+                        Z position to free space for the glass container
+  --frontposition FRONTPOSITION
+                        Y position of bed in front mode
+  --backposition BACKPOSITION
+                        Y position of bed in back mode
+```
 
 Here's an example of how to use this script:
 
