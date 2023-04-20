@@ -26,13 +26,13 @@ $ cd pcb-lullaby
 Then you can directly run the python code as the script depends on no external library. To use this Python script with argparse, you need to open a terminal and type:
 
 ```
-python ./code/perchlo_mixer_gcode.py FILE [--bedtemp BEDTEMP] [--timemix TIMEMIX] [--numwait NUMWAIT] [--speed SPEED] [--zposition ZPOSITION] [--frontposition FRONTPOSITION] [--backposition BACKPOSITION]
+python ./src/perchlo_mixer_gcode.py FILE [--bedtemp BEDTEMP] [--timemix TIMEMIX] [--numwait NUMWAIT] [--speed SPEED] [--zposition ZPOSITION] [--frontposition FRONTPOSITION] [--backposition BACKPOSITION]
 ```
 
 Note that the default value are for an Ender-3 Pro 3D-printer: 
 
 ```
-$ python ./code/perchlo_mixer_generator.py -h
+$ python ./src/perchlo_mixer_generator.py -h
 usage: perchlo_mixer_generator.py [-h] [--bedtemp BEDTEMP] [--timemix TIMEMIX] [--numwait NUMWAIT]
                                   [--speed SPEED] [--zposition ZPOSITION]
                                   [--frontposition FRONTPOSITION] [--backposition BACKPOSITION]
@@ -60,7 +60,7 @@ options:
 Here's an example of how to use this script:
 
 ```
-python ./code/perchlo_mixer_gcode.py my_circuit.gcode --bedtemp 30 --timemix 2 --numwait 3 --speed 1500 --zposition 150 --frontposition 120 --backposition 145
+python ./src/perchlo_mixer_gcode.py my_circuit.gcode --bedtemp 30 --timemix 2 --numwait 3 --speed 1500 --zposition 150 --frontposition 120 --backposition 145
 ```
 
 This will create a new G-code file called `my_circuit.gcode` with the given parameters. Note that if you omit any of the optional arguments, the script will use the default values.
