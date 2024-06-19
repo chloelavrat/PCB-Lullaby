@@ -16,7 +16,7 @@ The PCB Lullaby tool includes several features that make it easy to use and cust
 
 ## Getting Started
 
-To get started with the PCB Lullaby project, you will need an Ender 3 Pro 3D printer and an etching tank. To use the *pcb-lullaby* code, follow these steps:
+To get started with the PCB Lullaby project, you will need an Ender 3 Pro 3D printer and an etching tank. To use the _pcb-lullaby_ code, follow these steps:
 
 ```
 $ git clone https://github.com/azerty-labs/PCB-Lullaby.git
@@ -29,16 +29,16 @@ Then you can directly run the python code as the script depends on no external l
 python ./src/perchlo_mixer_gcode.py FILE [--bedtemp BEDTEMP] [--timemix TIMEMIX] [--numwait NUMWAIT] [--speed SPEED] [--zposition ZPOSITION] [--frontposition FRONTPOSITION] [--backposition BACKPOSITION]
 ```
 
-Note that the default value are for an Ender-3 Pro 3D-printer: 
+Note that the default value are for an Ender-3 Pro 3D-printer:
 
 ```
-$ python ./src/perchlo_mixer_generator.py -h
-usage: perchlo_mixer_generator.py [-h] [--bedtemp BEDTEMP] [--timemix TIMEMIX] [--numwait NUMWAIT]
+$ python ./src/perchloride_mixer_generator -h
+usage: perchloride_mixer_generator [-h] [--bedtemp BEDTEMP] [--timemix TIMEMIX] [--numwait NUMWAIT]
                                   [--speed SPEED] [--zposition ZPOSITION]
                                   [--frontposition FRONTPOSITION] [--backposition BACKPOSITION]
                                   FILE
 
-Perchlo mixer gcode
+perchloride mixer gcode
 
 positional arguments:
   FILE                  name of the gcode file
@@ -60,7 +60,7 @@ options:
 Here's an example of how to use this script:
 
 ```
-python ./src/perchlo_mixer_gcode.py my_circuit.gcode --bedtemp 30 --timemix 2 --numwait 3 --speed 1500 --zposition 150 --frontposition 120 --backposition 145
+python ./src/perchloride_mixer_generator.py my_circuit.gcode --bedtemp 30 --timemix 2 --numwait 3 --speed 1500 --zposition 150 --frontposition 120 --backposition 145
 ```
 
 This will create a new G-code file called `my_circuit.gcode` with the given parameters. Note that if you omit any of the optional arguments, the script will use the default values.
