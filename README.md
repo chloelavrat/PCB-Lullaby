@@ -26,7 +26,7 @@ $ cd pcb-lullaby
 Then you can directly run the python code as the script depends on no external library. To use this Python script with argparse, you need to open a terminal and type:
 
 ```
-python ./src/perchlo_mixer_gcode.py FILE [--bedtemp BEDTEMP] [--timemix TIMEMIX] [--numwait NUMWAIT] [--speed SPEED] [--zposition ZPOSITION] [--frontposition FRONTPOSITION] [--backposition BACKPOSITION]
+python ./src/perchloride_mixer_generator.py FILE [--bedtemp BEDTEMP] [--timemix TIMEMIX] [--numwait NUMWAIT] [--speed SPEED] [--zposition ZPOSITION] [--frontposition FRONTPOSITION] [--backposition BACKPOSITION]
 ```
 
 Note that the default value are for an Ender-3 Pro 3D-printer:
