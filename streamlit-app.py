@@ -1,6 +1,5 @@
 import streamlit as st
 import subprocess
-import os
 
 # Function to execute the command and generate the output file
 def generate_gcode(file_name, bedTemp, timeMix, numWait, speed, zPosition, frontPosition, backPosition):
