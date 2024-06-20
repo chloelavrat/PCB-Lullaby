@@ -60,7 +60,7 @@ options:
 Here's an example of how to use this script:
 
 ```
-python ./src/perchloride_mixer_generator.py my_circuit.gcode --bedtemp 30 --timemix 2 --numwait 3 --speed 1500 --zposition 150 --frontposition 120 --backposition 145
+python ./src/perchloride_mixer_generator.py my_circuit.gcode --bedTemp 30 --timeMix 1 --numWait 2 --speed 1500 --zPosition 200 --frontPosition 120 --backPosition 150
 ```
 
 This will create a new G-code file called `my_circuit.gcode` with the given parameters. Note that if you omit any of the optional arguments, the script will use the default values.
