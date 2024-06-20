@@ -50,3 +50,6 @@ with st.form("my_form"):
 
 if gcode_content:
     st.download_button(label="Download G-code", data=gcode_content, file_name=file_name_input, mime="text/plain")
+
+with st.expander("Chloe Lavrat"):
+    st.write(''' INFOS HERE ''')
