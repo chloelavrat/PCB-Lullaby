@@ -32,6 +32,10 @@ st.markdown("""
             
             Fill in the parameters, and click "Generate the G-code" to generate and download the customized G-code for your setup.""")
 
+with st.expander("**Demo video**"):
+    youtube_url = 'https://www.youtube.com/watch?v=_3DP3HD8CqY'
+    st.video(youtube_url, muted=True, autoplay=True, loop=True)
+
 gcode_content = None
 
 with st.form("my_form"):
@@ -50,6 +54,3 @@ with st.form("my_form"):
 
 if gcode_content:
     st.download_button(label="Download G-code", data=gcode_content, file_name=file_name_input, mime="text/plain")
-
-with st.expander("Chloe Lavrat"):
-    st.write(''' INFOS HERE ''')
