@@ -65,6 +65,13 @@ python ./src/perchloride_mixer_generator.py my_circuit.gcode --bedTemp 30 --time
 
 This will create a new G-code file called `my_circuit.gcode` with the given parameters. Note that if you omit any of the optional arguments, the script will use the default values.
 
+## Docker
+
+```
+docker build -t pcb-lullaby .
+docker run -p 8501:8501 pcb-lullaby
+```
+
 ## Contributing
 
 The PCB Lullaby project is an open-source project, and contributions are always welcome. If you would like to contribute to the project, you can do so by submitting a pull request or by creating an issue on the project's GitHub page.
