@@ -121,10 +121,6 @@ This will create a new G-code file called `my_circuit.gcode` with the given para
 
 The PCB Lullaby project is an open-source project, and contributions are always welcome. If you would like to contribute to the project, you can do so by submitting a pull request or by creating an issue on the project's GitHub page.
 
-## Demo
-
-[![PCB Lullaby](https://img.youtube.com/vi/_3DP3HD8CqY/0.jpg)](http://www.youtube.com/watch?v=_3DP3HD8CqY)
-
 ## License
 
 The PCB Lullaby project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
