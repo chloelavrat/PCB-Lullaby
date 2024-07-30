@@ -3,14 +3,14 @@
 </div>
 
 <h3 align="center">
-  <b><a href="#">Online App</a></b>
+  <b><a href="https://pcb-lullaby.streamlit.app">Online App</a></b>
   •
   <b><a href="#python-api">Python API</a></b>
   •
   <b><a href="http://www.youtube.com/watch?v=_3DP3HD8CqY">Demo Video</a></b>
 </h3>
 
-<div style="text-align: center;">
+<div align="center">
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
   </a>
