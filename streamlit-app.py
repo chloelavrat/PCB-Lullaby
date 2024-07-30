@@ -26,7 +26,7 @@ def generate_gcode(file_name, bedTemp, timeMix, numWait, speed, zPosition, front
             gcode = file.read()
         return gcode
 
-
+st.set_page_config(page_title="PCB Lullaby", page_icon=":gear:")
 st.title("PCB Lullaby")
 st.subheader("Achieve faster PCB etching with your 3D printer ! ")
 st.image("banner.png")
