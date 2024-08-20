@@ -12,7 +12,7 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Make port 8501 available to the world outside this container
-EXPOSE 8501
+EXPOSE 80
 
 # Define environment variable
 ENV PYTHONUNBUFFERED=1
@@ -20,4 +20,4 @@ ENV PYTHONUNBUFFERED=1
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
 # Run streamlit
-CMD ["streamlit", "run", "streamlit-app.py", "--server.port=8501"]
+CMD ["streamlit", "run", "streamlit-app.py", "--server.port=80"]
