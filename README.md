@@ -60,11 +60,11 @@ If you want to run the PCB Lullaby streamlit app locally. Multiple solution are 
     ```
     docker build -t pcb-lullaby .
     ````
-    Run the container at a specified port (here 8501) 
+    Run the container at a specified port (here 80) 
     ```
-    docker run -p 8501:8501 pcb-lullaby
+    docker run -p 80:80 pcb-lullaby
     ```
-    Go to your web browser and access [localhost:8501](http://localhost:8501)
+    Go to your web browser and access [localhost:80](http://localhost:80)
 
 ## Python API
 
