@@ -40,7 +40,7 @@ If you want to run the PCB Lullaby streamlit app locally. Multiple solution are 
     
     clone repository:
     ```
-    git clone https://github.com/azerty-labs/PCB-Lullaby.git
+    git clone https://github.com/chloelavrat/PCB-Lullaby.git
     cd pcb-lullaby
     ```
     Create, activate and install your environnement:
